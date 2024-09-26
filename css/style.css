@@ -166,7 +166,7 @@ select {
 
 @font-face {
 	font-family: 'Heal The Web B';
-	src: url('/IFES Gaming Tournament/src/HealTheWebB-Regular.otf') format('opentype');
+	src: url('/src/HealTheWebB-Regular.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 
