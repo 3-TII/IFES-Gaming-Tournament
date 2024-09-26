@@ -150,43 +150,70 @@ header {
 	color: #9146ff;
 }
 
+.info-main h1, .info-main a{
+	margin: 3rem;
+	font-size: 3rem;
+	color: #151515;
+}
 
 @media all and (max-width: 768px) {
-  h1 {
-    font-size: calc(1.5rem * var(--smaller));
-  }
+	h1 {
+	  font-size: 1.5rem;
+	}
   
-  li {
-    font-size: calc(1.125rem * var(--smaller));
-  }
+	li {
+	  font-size: 1.125rem;
+	}
   
-  li p {
-    font-size: calc(3.375rem * var(--smaller));
-  }
-
-  header nav ul {
-    flex-direction: column;
-  }
-
-  header nav ul li {
-    width: 100%;
-    margin: 0.5rem 0;
-  }
-
-  header nav ul li img {
-    height: 3rem;
-  }
-
-  #headline {
-    font-size: 2rem;
-  }
-
-  .emoji p {
-    font-size: 1.5rem;
-  }
-
-  header nav ul li a {
-    font-size: 1.25rem;
-    padding: 0.75rem;
-  }
+	li p {
+	  font-size: 3.375rem;
+	}
+  
+	header nav {
+	  width: 100%;
+	}
+  
+	header nav ul {
+	  flex-direction: column;
+	  flex-wrap: wrap;
+	  justify-content: flex-start;
+	}
+  
+	header nav ul li {
+	  width: 100%;
+	  margin: 0.5rem 0;
+	}
+  
+	header nav ul li img {
+	  height: 3rem;
+	}
+  
+	#headline {
+	  font-size: 2rem;
+	}
+  
+	.emoji p {
+	  font-size: 1.5rem;
+	}
+  
+	header nav ul li a {
+	  font-size: 1.25rem;
+	  padding: 0.75rem;
+	}
+  
+	/* Contagem regressiva em layout vertical */
+	#countdown ul {
+	  flex-direction: column; /* Mudando para coluna */
+	}
+  
+	#countdown ul li {
+	  margin-bottom: 1rem; /* Espaçamento entre os itens */
+	}
+  
+	#countdown ul li p {
+	  height: 4rem; /* Ajusta altura dos quadrados */
+	  width: 4rem;  /* Ajusta largura dos quadrados */
+	  font-size: 2.5rem; /* Ajusta o tamanho da fonte */
+	}
+    
 }
