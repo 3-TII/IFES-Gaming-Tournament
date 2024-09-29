@@ -614,7 +614,7 @@ footer a {
 
 iframe {
 	width: 100%;
-	height: 20vw;
+	height: calc((100vw)/3);
 }
 
 }
