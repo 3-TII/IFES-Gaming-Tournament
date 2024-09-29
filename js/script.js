@@ -1,3 +1,9 @@
+const path = window.location.pathname;
+
+if (path.includes('sobre.html')){
+
+} else {
+
 (function () {
   const second = 1000,
         minute = second * 60,
@@ -97,3 +103,4 @@
 
   window.addEventListener('resize', updateImages);
 })();
+}
