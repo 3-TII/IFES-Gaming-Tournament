@@ -80,10 +80,12 @@
 
   function updateImages() {
     const windowSize = window.innerWidth;
+
     if (windowSize < 769) {
       images.forEach(img => {
         img.src = 'src/bannerL.png';
       });
+
     } else {
       images.forEach(img => {
         img.src = 'src/banner.png';
