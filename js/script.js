@@ -97,4 +97,3 @@
 
   window.addEventListener('resize', updateImages);
 })();
-
