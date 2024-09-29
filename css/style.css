@@ -389,6 +389,7 @@ iframe {
 	width: 40%;
 	max-height: 25rem;
 	min-height: 20rem;
+	background-color: #151515;
 }
 
 @media all and (max-width: 768px) {
@@ -578,7 +579,7 @@ footer a {
 }
 
 .slider {
-		display: flex;
+		display: none;
 		justify-content: flex-start;
 		width: 100%;
 		max-height: 15rem;
