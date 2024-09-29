@@ -42,3 +42,35 @@
         //seconds
       }, 0)
   }());
+
+(function(){
+  // const slide_1 = document.getElementById('slide_1');
+  // const slide_2 = document.getElementById('slide_2');
+  // const slide_3 = document.getElementById('slide_3');
+  // const slide_4 = document.getElementById('slide_4');
+  // const slide_5 = document.getElementById('slide_5');
+
+  var numActive = 1;
+
+  x = setInterval(function() {
+    if (numActive > 5) {
+      numActive = 1;
+    }
+
+    console.log("to no " + numActive);
+
+    for (var i = 1; i <= 5; i++) {
+      let string = "slide_" + i;
+
+      if(i == numActive){
+        document.getElementById(string).style.display = 'flex';  
+      } else {
+        document.getElementById(string).style.display = 'none';
+      }
+      
+    }
+  
+    numActive+=1
+  }, 10000)
+
+}());
