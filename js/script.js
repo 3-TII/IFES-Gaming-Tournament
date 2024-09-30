@@ -1,7 +1,7 @@
 const path = window.location.pathname;
 
 if (path.includes('sobre.html')){
-
+  
 } else {
 
 (function () {
