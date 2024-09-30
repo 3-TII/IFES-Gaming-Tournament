@@ -613,6 +613,7 @@ footer a {
 }
 
 iframe {
+	display: none;
 	width: 100%;
 	height: calc((100vw)/3);
 }
