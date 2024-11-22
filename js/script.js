@@ -4,6 +4,30 @@ if (path.includes('sobre.html')){
   
 } else {
 
+function ativar(id){
+  document.getElementById(id).style.display = 'flex';
+
+  if (id == 'valorant'){
+    document.getElementById('img_rl').style.opacity = '0.6';
+    document.getElementById('img_valorant').style.opacity = '1';
+  } else if (id == 'rocket'){
+    document.getElementById('img_rl').style.opacity = '1';
+    document.getElementById('img_valorant').style.opacity = '0.6';
+  }
+
+  if (id == 'valorant' && document.getElementById('rocket').style.display == 'flex'){
+    document.getElementById('valorant').style.display = 'flex';
+    document.getElementById('rocket').style.display = 'none';
+    document.getElementById('img_rl').style.opacity = '0.6';
+    document.getElementById('img_valorant').style.opacity = '1';
+
+  } else if (id == 'rocket' && document.getElementById('valorant').style.display == 'flex'){
+    document.getElementById('rocket').style.display = 'flex';
+    document.getElementById('valorant').style.display = 'none';
+
+  }
+}
+
 (function () {
   const second = 1000,
         minute = second * 60,
